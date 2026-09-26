@@ -1,0 +1,26 @@
+﻿task_id,question,answer_correctness,evidence_valid,rework_level,reviewer_note
+RAG_001,휴직 중에도 직무급을 받을 수 있나요?,partial,yes,minor,AI review (provisional; human confirmation pending): Core answer is right; an extra statement about other pay is not supported by the cited chunk.
+RAG_002,점심시간은 몇 시부터 몇 시까지인가요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer and cited rule agree.
+RAG_003,1년 이상 근무하고 출근율이 80% 이상이면 연차휴가는 며칠인가요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer and cited rule agree.
+RAG_004,미사용 연차휴가에 대해 수당을 지급하나요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer and cited rule agree.
+RAG_005,1년 미만 근무자는 몇 개월 개근 시 연차휴가 1일을 받나요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer and cited rules agree.
+RAG_006,"공간정보 보안담당관이 공석인데, 그 직무는 누가하나요?",correct,yes,none,AI review (provisional; human confirmation pending): Answer and cited rule agree.
+RAG_007,항공사진 비공개 기준이 궁금합니다.,partial,yes,minor,AI review (provisional; human confirmation pending): Answer omits the public access restriction and 3D material detail in the criterion.
+RAG_008,비공개 공간정보를 공개하여야하는 피치못할 상황이면 어떡하나요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer and cited rule agree.
+RAG_009,안전지출 장소를 변경할 수 있나요?,incorrect,no,major,AI review (provisional; human confirmation pending): System abstained although the rule exists; no supporting citation was returned.
+RAG_010,"비공개 공간정보의 기간이 경과되었는데, 공개해도 되나요?",partial,yes,minor,"AI review (provisional; human confirmation pending): Correct reclassification point, but adds an approval condition from a different situation."
+RAG_011,사망도 퇴직에 해당되나요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer is supported by the cited automatic retirement clause.
+RAG_012,강등 또는 정직 처분 기간에는 연봉을 지급하나요?,incorrect,no,major,AI review (provisional; human confirmation pending): Answer says annual pay is not paid and adds an unrelated job-pay exception; cited chunks do not support that conclusion.
+RAG_013,정직은 얼마나 지속되며 그 기간에 연봉은 어떻게 되나요?,incorrect,no,major,AI review (provisional; human confirmation pending): Answer confuses suspension with position removal and cites unrelated position-removal rules.
+RAG_014,직원의 초임호봉은 무조건 1호봉인가요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer agrees with the initial-grade rule and its experience exception.
+RAG_015,기능직3등급 13호봉의 급여가 궁금합니다.,correct,yes,none,AI review (provisional; human confirmation pending): Amount matches the cited functional pay table.
+RAG_016,비밀기록물 원본을 생산부서에서 파기하여도 될까요?,partial,yes,minor,"AI review (provisional; human confirmation pending): Correctly says do not destroy and transfer, but omits the three transfer triggers."
+RAG_017,2급 비밀의 복제를 제한하려고 합니다. 어떻게 해야하나요?,partial,yes,minor,"AI review (provisional; human confirmation pending): Core instruction is present, but the quoted restriction text is malformed and needs clarification."
+RAG_018,지역본부의 사옥방호책임자는 누가 되나요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer and cited rule agree.
+RAG_019,"외부인 출입일지 보관 기간과, 기관이 경과 후 폐기는 마음대로 해도되는지 궁금합니다.",correct,yes,none,AI review (provisional; human confirmation pending): Answer covers the requested retention and disposal procedure.
+RAG_020,보안담당관은 보안감사결과를 누구에게 보고해야하나요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer and cited rule agree.
+RAG_021,"직원 신규채용시, 수습기간이 어떻게 되나요?",correct,yes,none,"AI review (provisional; human confirmation pending): Answer and cited rule agree, including exceptions."
+RAG_022,파견 근무는 언제 가능한가요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer includes all three grounds in the cited rule.
+RAG_023,출산휴가와 육아휴직을 연계하여 사용할 수 있나요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer and cited rule agree.
+RAG_024,강등당하면 신분도 없어지나요?,correct,yes,none,AI review (provisional; human confirmation pending): Answer directly answers the question and is supported by the cited rule.
+RAG_025,기능직 4등급의 승진소요 최저년수가 궁금합니다.,correct,no,minor,"AI review (provisional; human confirmation pending): Value is correct, but one cited chunk ID is invalid and the other only points to the table; replace with the matching appendix chunk."

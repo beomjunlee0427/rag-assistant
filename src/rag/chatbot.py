@@ -205,6 +205,7 @@ def generate_answer(
     return {
         "answer": answer,
         "sources": sources,
+        "used_chunk_ids": used_chunk_ids,
         "documents": documents,
         "search_question": search_question,
         "followup_questions": followup_questions,

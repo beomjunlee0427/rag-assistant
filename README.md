@@ -10,6 +10,27 @@
 
 ---
 
+## Business KPI 예비 평가
+
+규정 조회 업무에서 시스템이 답변을 얼마나 정확하고 근거 있게 제공하는지, 검토 후 어느 정도의 수정이 필요한지 업무 관점 KPI로 정리했습니다. **Golden Question 25개를 실제 RAG 챗봇에 입력해 답변을 생성**하고, 답변을 기준 답변 및 인용 규정과 대조했습니다.
+
+| 현업 KPI | 예비 결과 | 산출 기준 |
+| --- | ---: | --- |
+| 규정 탐색시간 단축률 | **93.6%*** | 가정한 수작업 평균 76.8초와 이전 실험의 AI 평균 4.9초 비교 |
+| 업무 질의 정확 처리율 | **68.0%** | AI 예비 판정에서 정답 17/25 |
+| 근거 확인 가능률 | **84.0%** | 인용 근거가 답변을 뒷받침한다고 판정한 21/25 |
+| 재작업률 | **36.0%** | 일부 수정 6건 + 전면 재검토 3건, 총 9/25 |
+
+> **해석 시 유의:** 25개 답변은 현재 RAG 실행 결과입니다. 정확성·근거·재작업 수치는 Golden 기준 답변 및 인용 chunk와 대조한 AI 예비 평가이며 사람의 검수 전입니다. *시간 단축률은 수작업 시간이 실측값이 아닌 시나리오 가정값이고, AI 시간은 이번 실행이 아닌 기존 실험 기록을 사용한 참고 시뮬레이션입니다. 포트폴리오의 확정 성과로 인용하기 전에 실제 시간 측정과 사람 평가가 필요합니다.
+
+- [Business KPI 예비 평가 보고서](evaluation/results/business_kpi_report.md)
+- [25개 질문의 RAG 답변 및 인용 근거](evaluation/results/business_kpi_rag_answers.csv)
+- [문항별 정확성·근거·재작업 판정](evaluation/business_kpi/rag_review.csv)
+
+같은 질문 세트로 RAG 답변을 다시 생성하려면 `uv run python evaluation/business_kpi/run_rag_tasks.py`를 실행합니다.
+
+---
+
 ## 1. 프로젝트 소개
 
 - **문제**: 사내 규정이 여러 PDF에 분산되어 있어 직원이 필요한 조항을 찾기 어렵고, 규정을 잘 모르는 경우 인사 담당 부서에 반복적으로 문의해야 합니다.
@@ -233,6 +254,15 @@ mle-01-p1-team4/
 │       └── *.png                   # 서비스 화면 이미지
 │
 ├── evaluation/
+│   ├── business_kpi/
+│   │   ├── rag_tasks.csv             # 업무 관점 평가 질문 25개와 Golden 기준 답변
+│   │   ├── rag_review.csv            # 정답성·근거·재작업 예비 평가
+│   │   ├── rag_time_log.csv          # 수작업/AI 시간 기록 및 시나리오 값
+│   │   └── run_rag_tasks.py          # Golden 질문의 RAG 답변 생성 및 저장
+│   ├── results/
+│   │   ├── business_kpi_report.md    # 현업 KPI 예비 평가 보고서
+│   │   ├── business_kpi_rag_answers.csv # 질문별 생성 답변과 사용 근거
+│   │   └── business_kpi_summary.json # Business KPI 집계 결과
 │   ├── evaluate_retriever.py       # Hit@K · Precision · Recall · MRR 평가
 │   ├── golden_set.csv              # 검색 품질 평가 데이터셋
 │   ├── test_rag_manual.py          # RAG 응답 수동 평가

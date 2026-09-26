@@ -1,0 +1,23 @@
+{
+  "rag": {
+    "task_count": 25,
+    "manual_avg_time_sec": 76.8,
+    "ai_avg_time_sec": 4.928,
+    "time_reduction_rate": 0.9358333333333334,
+    "time_pairs_available": 25,
+    "time_data_note": "manual time is simulated; AI time is from a prior saved experiment, not the current live run",
+    "evaluation_data_note": "ratings are provisional AI review of current live answers and cited evidence; human confirmation is pending",
+    "answer_correctness_rate": 0.68,
+    "answer_reviews_completed": 25,
+    "evidence_validity_rate": 0.84,
+    "evidence_reviews_completed": 25,
+    "rework_rate": 0.36,
+    "rework_reviews_completed": 25
+  },
+  "data_status": {
+    "status": "live_answers_with_provisional_ai_review_and_simulated_manual_times",
+    "manual_time_sec": "simulated scenario values; not observed",
+    "ai_time_sec": "prior saved experiment values; current live answer run was not timed",
+    "human_review": "AI provisional labels; human confirmation pending"
+  }
+}

@@ -1,0 +1,14 @@
+﻿project,metric,value
+rag,task_count,25
+rag,manual_avg_time_sec,76.8
+rag,ai_avg_time_sec,4.928
+rag,time_reduction_rate,0.9358333333333334
+rag,time_pairs_available,25
+rag,time_data_note,"manual time is simulated; AI time is from a prior saved experiment, not the current live run"
+rag,evaluation_data_note,ratings are provisional AI review of current live answers and cited evidence; human confirmation is pending
+rag,answer_correctness_rate,0.68
+rag,answer_reviews_completed,25
+rag,evidence_validity_rate,0.84
+rag,evidence_reviews_completed,25
+rag,rework_rate,0.36
+rag,rework_reviews_completed,25
